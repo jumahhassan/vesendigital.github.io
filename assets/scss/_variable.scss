@@ -1,0 +1,44 @@
+$color-primary:#fff;
+$text-primary:#666666;
+$icons-color:#fd4a36;
+$heading-color:#0c2957;
+$background-color:#f8f8ff;
+$bg-color: linear-gradient(66deg, rgba(48,5,123,1) 16%, rgba(59,19,141,1) 49%, rgba(106,73,203,1) 81%);
+
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap);
+
+@mixin heading {
+    display:block;
+    width: 100%;
+    text-align:center;
+    margin:1.25rem 0;
+    position: relative;
+    z-index: 2;
+    transition: all ease-in .5s;
+
+    span{
+        display:block;
+        margin:0 0 .625rem 0;
+        color:$icons-color;
+        font-size:1rem;
+        text-transform:uppercase;
+        font-weight:500;
+        letter-spacing:.5px;
+    }
+
+    h2{
+        font-size:1.5625rem;
+        text-transform:capitalize;
+        font-weight:600;
+        display:inline-block;
+        color:$heading-color;
+    }
+
+    p{
+        font-size:.8125rem;
+        display:block;
+        margin:.625rem 0;
+        text-transform:capitalize;
+        color:$text-primary;
+    }
+}
